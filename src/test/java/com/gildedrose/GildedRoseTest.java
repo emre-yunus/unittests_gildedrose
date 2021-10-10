@@ -15,5 +15,5 @@ class GildedRoseTest {
         assertEquals(-1, app.items[0].sellIn);
         assertEquals(0, app.items[0].quality);
     }
-    
+
 }
