@@ -80,6 +80,14 @@ class GildedRoseTest {
     }
 
     @Test
+    void qualityWithSellin0DecreasesFast() {
+        Item[] items = new Item[] { new Item("normal", 0, 10) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(8, app.items[0].quality);
+    }
+
+    @Test
     void sellinUnder0Decreases() {
         Item[] items = new Item[] { new Item("normal", -10, 10) };
         GildedRose app = new GildedRose(items);
