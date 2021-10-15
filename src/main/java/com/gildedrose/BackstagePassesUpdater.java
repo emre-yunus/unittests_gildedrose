@@ -22,8 +22,8 @@ public class BackstagePassesUpdater {
                 items[i].sellIn--;
                 if(items[i].sellIn < 0) {items[i].quality = 0;}
             } else {
-                GildedRose gildedRose = new GildedRose(items);
-                gildedRose.updateQuality();
+                ItemUpdater itemUpdater = new ItemUpdater(items);
+                itemUpdater.updateQuality();
             }
         }
     }

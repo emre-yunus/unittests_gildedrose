@@ -10,8 +10,8 @@ public class SulfurasUpdater {
     public void updateQuality() {
         for (int i = 0; i < items.length; i++) {
             if (!items[i].name.equals("Sulfuras, Hand of Ragnaros")) {
-                GildedRose gildedRose = new GildedRose(items);
-                gildedRose.updateQuality();
+                ItemUpdater itemUpdater = new ItemUpdater(items);
+                itemUpdater.updateQuality();
             }
         }
     }
